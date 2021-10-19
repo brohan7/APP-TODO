@@ -1,0 +1,12 @@
+<div style="background-color: red; height: 100px;"><h1 style="margin-left: 500px;">TO-DO LIST</h1></div>
+  <div style="background-color: gold; width:300px; border:dotted 20px blue; margin-left:580px;margin-top:300px;margin-bottom:300px;">
+  <h3 style="margin-left: 550px;";>{{title}}</h3>
+
+<input type="text" placeholder="Enter New Task" #task  style="margin-left: 60px;"/><br> <br>
+
+<button  (click)="ADD(task.value)" style="margin-left: 100px; margin-bottom:50px;">ADD</button>
+<br>
+<ul *ngFor="let item of list">
+  <div><li>{{item.name}}<button (click)="DELETE(item.id)" >DELETE</button></li></div><br>
+ </ul></div>
+ <div style="background-color: blueviolet; height: 50px;"><h4 style="margin-left: 650px;">WHAT’S YOUR PLANS?</h4></div>
